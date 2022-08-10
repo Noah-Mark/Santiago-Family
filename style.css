@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 20px;
+    background: white;
+    height: 100vh;
+}
+
+.wrapper{
+    height: 122vh;
+}.wrapper::after{
+    content: '';
+    position: absolute;
+    height: 100vh;
+    background: greenyellow;
+    width: 100%;
+    top: 0;
+    z-index: -999;
+    right: 0;
+    clip-path: circle(55% at 70% 40%);
+}
+.logo{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    z-index: 999;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.body{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    position: fixed;
+    background: linear-gradient(blue, lightblue);
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: 0.5s ease-in-out;
+}
+nav ul{
+    padding: 0;
+    margin-top: 100px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    height: 70px;
+    font-size: 1.8rem;
+}
+nav ul li a:hover{
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+}
+.body{
+    display: block;
+    text-align: justify;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+.open{
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    right: 20px;
+    z-index: 999;
+}
+nav .close{
+    position: fixed;
+    width: 30px;
+    top: 20px;
+    right: 20px;
+}
+.open-nav{
+    transform: translateX(0%);
+}
+
+
+.wrapper-fam{
+    position: relative;
+    min-height: 100vh;
+}.wrapper-fam::before{
+    position: absolute;
+    content: '';
+    background: linear-gradient(green, yellow);
+    clip-path: circle(30% at 20% 20%);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.356);
+    width: 100%;
+    height: 100%;
+}.wrapper-fam::after{
+    position: absolute;
+    content: '';
+    top:0;
+    right: 0;
+    background: linear-gradient(rgb(0, 204, 255), rgb(7, 7, 0));
+    clip-path: circle(30% at 90% 90%);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.247);
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+}
+.wrapper-fam h1{
+    font-weight: bolder;
+    border: 2px solid rgba(0, 0, 0, 0.24);
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.fam{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}.fam img{
+    border-radius: 50%;
+    box-shadow: 5px 0px 20px rgb(0, 0, 0);
+}.wrapper-fam a {
+    text-decoration: none;
+}
+.wrapper-fam a button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.288);
+    border-radius: 20px;
+    padding: 0.5em;
+    margin: 20px;
+    color: blueviolet;
+    font-weight: 600;
+}
+
+
+.wrapper-christmas{
+    position: relative;
+    min-height: 100vh;
+}.wrapper-christmas::before{
+    position: absolute;
+    content: '';
+    background: linear-gradient(rgb(255, 0, 106), rgb(195, 0, 255));
+    clip-path: circle(30% at 20% 20%);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.356);
+    width: 100%;
+    height: 100%;
+}.wrapper-christmas::after{
+    position: absolute;
+    content: '';
+    top:0;
+    right: 0;
+    background: linear-gradient(145deg, rgb(255, 0, 0), rgb(18, 109, 0));
+    clip-path: circle(30% at 90% 90%);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.247);
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+}
+.wrapper-christmas h1{
+    margin-top: 2em;
+    font-weight: bolder;
+    border: 2px solid rgba(0, 0, 0, 0.24);
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 30px;
+}.christ{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}.christ img{
+    border-radius: 50%;
+    box-shadow: 5px 0px 20px rgb(0, 0, 0);
+}.wrapper-christmas a {
+    text-decoration: none;
+}
+.wrapper-christmas a button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.288);
+    border-radius: 20px;
+    padding: 0.5em;
+    margin: 20px;
+    color: blueviolet;
+    font-weight: 600;
+}
+
+.wrapper-pets{
+    position: relative;
+    min-height: 100vh;
+}.wrapper-pets::before{
+    position: absolute;
+    content: '';
+    background: linear-gradient(rgb(255, 38, 0), rgb(238, 255, 0));
+    clip-path: circle(30% at 20% 20%);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.356);
+    width: 100%;
+    height: 100%;
+}.wrapper-pets::after{
+    position: absolute;
+    content: '';
+    top:0;
+    right: 0;
+    background: linear-gradient(145deg, rgb(0, 68, 255), rgb(0, 109, 100));
+    clip-path: circle(30% at 90% 90%);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.247);
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+}
+.wrapper-pets h1{
+    margin-top: 2em;
+    font-weight: bolder;
+    border: 2px solid rgba(0, 0, 0, 0.24);
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 30px;
+}.pets{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}.pets img{
+    border-radius: 50%;
+    box-shadow: 5px 0px 20px rgb(0, 0, 0);
+}.wrapper-pets a {
+    text-decoration: none;
+}
+.wrapper-pets a button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.288);
+    border-radius: 20px;
+    padding: 0.5em;
+    margin: 20px;
+    color: blueviolet;
+    font-weight: 600;
+}
+
+footer{
+    position: relative;
+    background: linear-gradient(limegreen, rgb(162, 162, 243));
+    width: 100%;
+    height: 15em;
+}footer ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1em;
+}footer ul li{
+    list-style: none;
+}footer ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
